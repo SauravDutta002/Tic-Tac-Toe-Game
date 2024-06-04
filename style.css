@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: var(--bgcolor);
+    text-align: center;
+}
+
+:root {
+    --bgcolor: rgb(31 41 55);
+    --inputcolor: rgb(126 34 206);
+}
+
+.game-name {
+    font-family: "Poppins", sans-serif;
+    /* font-size: 30px; */
+    background-color: rgba(0, 0, 0, 0.582);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+
+}
+
+.name {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vmin;
+}
+
+.cover {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+}
+
+.msgbox {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-size: 6vmin;
+    background-color: rgba(126, 34, 206, 0.699);
+    color: white;
+    height: 50vh;
+    width: 100vw;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    font-weight: 600;
+}
+
+#msg {
+    margin-bottom: 8px;
+}
+
+.display-message {
+    display: none;
+}
+
+#new-btn {
+    height: 9vmin;
+    width: 35vmin;
+    border-radius: 5px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 5vmin;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 450;
+}
+
+#new-btn:hover {
+    background-color: var(--inputcolor);
+    color: white;
+}
+
+.container {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    display: none;
+}
+
+.game-box {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 10px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 8vmin;
+    color: var(--inputcolor);
+    background-color: white;
+    color: var(--inputcolor);
+}
+
+.box:hover {
+    background-color: rgba(255, 255, 255, 0.575);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#reset {
+    height: 9vmin;
+    width: 35vmin;
+    border-radius: 5px;
+    background-color: var(--inputcolor);
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 5vmin;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#reset:hover {
+    background-color: rgba(126, 34, 206, 0.589);
+}
+
+#newgame {
+    position: absolute;
+    height: 9vmin;
+    width: 35vmin;
+    border-radius: 5px;
+    background-color: var(--inputcolor);
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 5vmin;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 65vw;
+    z-index: 10;
+}
+
+#newgame:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.scoreboard {
+    font-family: "Poppins", sans-serif;
+    height: 9vmin;
+    width: 30vmin;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.11);
+    margin-bottom: 2px;
+    font-size: 3vmin;
+    margin-left: 20px;
+}
+
+.scoreboard p {
+    color: aqua;
+}
+
+.scoreboard-msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgcolor);
+    color: white;
+    height: 55px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.chance {
+    height: 9vmin;
+    width: 10vmin;
+    background-color: rgb(162, 104, 255);
+    color: white;
+    margin-right: 80px;
+    border-radius: 16px;
+    font-size: 6vmin;
+}
+
+.hide {
+    display: none;
+}
+
+.chance2 {
+   
+    height: 9vmin;
+    width: 10vmin;
+    border-radius: 16px;
+    color: var(--bgcolor);
+    background-color: rgb(162, 104, 255);
+    color: white;
+    font-size: 6vmin;
+}
+
+.turn {
+    border-radius: 20px;
+    padding-left: 40px;
+    background-color: rgba(255, 255, 255, 0.178);
+    display: flex;
+    height: 9vh;
+    width: 15vw;
+    margin-left: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
